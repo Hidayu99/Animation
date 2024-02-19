@@ -5,13 +5,15 @@ body {
 
 .shops-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Change to column */
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .shop {
     cursor: pointer;
+    margin-bottom: 10px; /* Add margin to separate shops */
     padding: 10px;
     background-color: #3498db;
     color: #fff;
