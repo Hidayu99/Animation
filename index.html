@@ -29,26 +29,31 @@
 </head>
 <body>
 
-<div class="shop-item">
+<div class="shop-item" id="product1">
     <h2>Ipone</h2>
     <p>Price half than orginal.</p>
     <p>Price: RM1919.99</p>
 </div>
 
-    <div class="shop-item">
+    <div class="shop-item" id="product2">
     <h2>Iphone 10</h2>
     <p>Can be your personal camera.</p>
     <p>Price: RM3919.99</p>
 </div>
 
-    <div class="shop-item">
+    <div class="shop-item" id="product3">
     <h2>Iphone 17</h2>
     <p>Coming Soon.</p>
     <p>Price: RM9919.99</p>
 </div>
 
 <script>
-    // You can add JavaScript functionality here if needed
+    const product1 = document.getElementById('product1');
+
+product1.addEventListener('click', function () {
+    const productName = this.querySelector('h2');
+    productName.textContent = 'New Product Name';
+});
 </script>
 
 </body>
