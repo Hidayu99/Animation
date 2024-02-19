@@ -1,10 +1,6 @@
-function focusOnShop(shop) {
-    // Remove focus from other shops
-    const allShops = document.querySelectorAll('.shop');
-    allShops.forEach((s) => {
-        s.blur();
-    });
+const product1 = document.getElementById('product1');
 
-    // Set focus on the clicked shop
-    shop.focus();
-}
+product1.addEventListener('click', function () {
+    const productName = this.querySelector('h2');
+    productName.textContent = 'New Product Name';
+});
