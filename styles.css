@@ -29,10 +29,10 @@ body {
 }
 
 @keyframes focusAnimation {
-    0% {
-        transform: scale(1);
+    40% {
+        transform: scale(3);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(5);
     }
 }
