@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Shop System</title>
+    <title>Shop System Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .shop-item {
+            width: 200px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
 
-<div class="shops-container">
-    <div class="shop" onclick="focusOnShop(this)">Shop 1</div>
-    <div class="shop" onclick="focusOnShop(this)">Shop 2</div>
-    <div class="shop" onclick="focusOnShop(this)">Shop 3</div>
-    <!-- Add more shops as needed -->
+<div class="shop-item">
+    <h2>Product Name</h2>
+    <p>Description of the product goes here.</p>
+    <p>Price: $19.99</p>
 </div>
 
-<script src="script.js"></script>
+<!-- Add more shop items as needed -->
+
+<script>
+    // You can add JavaScript functionality here if needed
+</script>
+
 </body>
 </html>
