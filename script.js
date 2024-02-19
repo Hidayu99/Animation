@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var square = document.querySelector(".square");
+    var shopsCarousel = document.querySelector('.shops-carousel');
+    var shops = document.querySelectorAll('.shop');
+    var rotation = 0;
 
-    function moveSquare() {
-        var newX = Math.random() * window.innerWidth;
-        var newY = Math.random() * window.innerHeight;
+    setInterval(function() {
+        rotation += 45;
+        shopsCarousel.style.transform = 'rotate(' + rotation + 'deg)';
+    }, 3000);
 
-        square.style.transform = "translate(" + newX + "px, " + newY + "px)";
-    }
-
-    setInterval(moveSquare, 2000);
+    shops.forEach(function(shop) {
+        shop.addEventListener('click', function() {
+            alert('You clicked on ' + shop.textContent);
+        });
+    });
 });
